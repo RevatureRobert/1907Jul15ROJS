@@ -1,0 +1,142 @@
+<!-- we can put whatever we want inside of here and the browser will 
+ignore it 
+this is a comment
+comments are used for telling the next person about the code you write
+
+    What is html?
+        HyperText Markup Language
+        provides a structure for a browser to display
+    Is html a programming language?
+        no, it simply gives something for the browser to show
+
+We have tags inside of html
+First, we need a tag to tell the browser what kind of file it is
+-->
+
+<!DOCTYPE html>
+<!--
+then we need to have the important tags for html
+
+We start with the root tag
+    The root tag surrounds the other tags inside the document
+
+    the root tag inside an html doc is html
+    we have an opening tag and a closing tag
+
+
+    We can see the benefits of working with vsc
+
+    What is an IDE?
+        Integrated Development Environment
+    Why do we use IDE's?
+        It helps us stay efficient while writing code
+
+-->
+
+<html>
+  <!-- 
+    now we need to add in the rest of it
+        we need to add meta data
+    meta data is:
+        data about data
+
+-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>title of the page</title>
+  </head>
+  <!--the last important inside an html
+        What we are displaying 
+-->
+  <body>
+    lots of different thinggs
+    <h1>this is a heading</h1>
+    <h2>this is another heading</h2>
+    <h3>this is a third heading</h3>
+    <h4>does it shrink forever?</h4>
+    <h5>can you see me?</h5>
+    <h6>is this the last one?</h6>
+
+    <p>
+      doesnt is mmake sense everybody for the p tag to be a <h1>this is a block element</h1>paragraph and
+      <span>this is an inline element</span>
+      for paragraphs to make paragraphs. Isnt this paragraph
+      inception??????!!!!!!!
+    </p>
+    <p>does this end up on the same line</p>
+
+    <!--what all will this ide do?
+        a hundred line breaks
+        br*100
+    -->
+
+    <!-- is comment this out after i type it
+    how did i do that?
+        ctrl+shift+frwrd slash and ctrl+frwrd slash -->
+    <!-- 
+    we have the opening and closing tags, then we have the content inside
+        of them, an html element is all of this together
+ -->
+    <!-- inline and block elements in html
+    block: those that take the entire width of the page
+    inline: those that be placed in the same line
+-->
+    <ol> This is an ordered list
+        <li>this is a list item</li><!-- this is a list item -->
+        <li> this is another listitem</li>
+    </ol>
+    <ul> This is an unordered list
+        <li>this is a bulleted item</li>
+        <li>this is another bulleted item</li>
+    </ul>
+
+    <table>
+        <tr><!-- this is for table row -->
+            <th><!-- this is a table heading -->
+                Header 1
+            </th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td><!-- this is for table data -->
+                Row 1, Column 1
+            </td>
+            <td>Row 1, Column 2</td>
+        </tr>
+        <tr>
+            <td id="td">Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+        </tr>
+    </table>
+
+    <!-- What is an attribute?
+            it contains a key-value pair, (name and value)
+            that controls the behavior and appearance of an element
+        There are attribute tags for every element
+            These attributes can be used by all elements
+                these are known as global attribute
+        Others, such as action and method that are specific to <form>
+                are called local attributes
+        -->
+
+        <form id="sasquatch" action="http://blahblahblah.vampire.com" method="GET">
+            <input id="kangaroos" type="text" placeholder="username"><br>
+                <!-- type attribute can change the behavior and appearance of the field-->
+            <input type="password" placeholder="password"><br>
+            <input type="submit" value="this button here"><br>
+            <input type="radio" name="yesOrNo" value="yes">Yes <br>
+            <input type="radio" name="yesOrNo" value="no">No <br>
+            <select>
+                <option value="100">100</option>
+                <option value="50">50</option>
+                <option value="0">0</option>
+            </select>
+        </form>
+    <a href="https://mobile.bk.com/">
+        <img src="https://bcassetcdn.com/asset/logo/b24bc19e-a1ff-42d3-bc12-b31e5b8ec458/logo?v=4&text=Logo+Text+Here" alt="image not available, but im here for you, what do you need, dont look at me that way">
+    </a> 
+
+
+  </body>
+</html>
