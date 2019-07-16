@@ -47,9 +47,13 @@ table{
     border-style: dotted;
     padding:50px;
     margin: 50px;
-    border-width: 10px
+    border-width: 10px;
+   
 }
 
-li:nth-child(odd){
+tr:nth-child(odd){
     background-color: red;
+}
+tr{
+    background-color: blueviolet
 }
