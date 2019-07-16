@@ -42,7 +42,23 @@ We start with the root tag
 
 -->
 
+
+
   <head>
+
+    <!-- Internal Styling is where you have a script tag with your css inside it for the page -->
+    <!-- <style>
+        p{
+            color:yellow;
+        }
+    </style> -->
+
+    <!-- External styling is with an external css file -->
+    <!-- this is an absolute file path -->
+    <!-- <link rel="stylesheet" type="text/css" href="C:\Users\Revature\Documents\batches\1907Jul15ROJS\css\myStyles.css"> -->
+    <link rel="stylesheet" type="text/css" href="../">
+
+
     <meta charset="UTF-8" />
     <title>title of the page</title>
   </head>
@@ -51,16 +67,18 @@ We start with the root tag
 -->
   <body>
     lots of different thinggs
-    <h1>this is a heading</h1>
-    <h2>this is another heading</h2>
+    <h1 class="myClass" id="h1">this is a heading</h1>
+    <h2 id="h1">this is another heading</h2>
     <h3>this is a third heading</h3>
     <h4>does it shrink forever?</h4>
     <h5>can you see me?</h5>
-    <h6>is this the last one?</h6>
+
+    <!-- inline styling is where you use the style attribute -->
+    <h6 style="background-color: brown">is this the last one?</h6>
 
     <p>
       doesnt is mmake sense everybody for the p tag to be a <h1>this is a block element</h1>paragraph and
-      <span>this is an inline element</span>
+      <span style="background-color:green">this is an inline element</span>
       for paragraphs to make paragraphs. Isnt this paragraph
       inception??????!!!!!!!
     </p>
@@ -84,16 +102,16 @@ We start with the root tag
 -->
     <ol> This is an ordered list
         <li>this is a list item</li><!-- this is a list item -->
-        <li> this is another listitem</li>
+        <li class="myClass"> this is another listitem</li>
     </ol>
     <ul> This is an unordered list
         <li>this is a bulleted item</li>
         <li>this is another bulleted item</li>
     </ul>
 
-    <table>
+    <table width="100%" border=5>
         <tr><!-- this is for table row -->
-            <th><!-- this is a table heading -->
+            <th class="myClass"><!-- this is a table heading -->
                 Header 1
             </th>
             <th>Header 2</th>
@@ -120,14 +138,14 @@ We start with the root tag
                 are called local attributes
         -->
 
-        <form id="sasquatch" action="http://blahblahblah.vampire.com" method="GET">
-            <input id="kangaroos" type="text" placeholder="username"><br>
+        <form id="sasquatch" action="http://localhost:9001/api/form" method="">
+            <input name="username" type="text" placeholder="username"><br>
                 <!-- type attribute can change the behavior and appearance of the field-->
-            <input type="password" placeholder="password"><br>
+            <input name="password"type="password" placeholder="password"><br>
             <input type="submit" value="this button here"><br>
             <input type="radio" name="yesOrNo" value="yes">Yes <br>
             <input type="radio" name="yesOrNo" value="no">No <br>
-            <select>
+            <select name="number">
                 <option value="100">100</option>
                 <option value="50">50</option>
                 <option value="0">0</option>
@@ -136,7 +154,48 @@ We start with the root tag
     <a href="https://mobile.bk.com/">
         <img src="https://bcassetcdn.com/asset/logo/b24bc19e-a1ff-42d3-bc12-b31e5b8ec458/logo?v=4&text=Logo+Text+Here" alt="image not available, but im here for you, what do you need, dont look at me that way">
     </a> 
+<!-- 
+    src <----------------------- resource
+    href ---------------------- > resource
+ -->
+    <textarea rows="50" cols="40" class="myClass">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Ut ut ultricies dolor. Aliquam ac semper lorem. Vestibulum 
+             non tellus placerat, mollis nisi nec, suscipit purus. 
+             Curabitur volutpat auctor nisl, vitae dictum risus. 
+             Vestibulum pulvinar fringilla semper. Mauris venenatis 
+             neque nisl, vel vehicula ante vehicula at. Curabitur i
+             n orci sapien. Fusce aliquet lacinia enim vitae pretium. C
+             urabitur in sapien tristique, consectetur nulla pulvinar, 
+             laoreet ipsum. Cras eget dignissim mi. Donec malesuada, 
+             nunc eu vulputate gravida, metus mauris faucibus urna, 
+             vitae facilisis ex tortor a mauris. Vestibulum quis a
+             ugue quis velit molestie elementum.
+    </textarea>
 
+    <div>
+        <p>ingilla semper. Mauris venenatis 
+                neque nisl, vel vehicula ante vehicula at. Curabitur i
+                n orci sapien. 
+            <div>
+                    <p>Fusce aliquet lacinia enim vitae pretium. C
+                urabitur in sapien tristique, consectetur nulla pulvinar, 
+                laoreet ipsum. Cras </p>
+            </div>
+            eget dignissim mi. Donec malesuada, 
+                nunc eu vulputate gravida, metu
+        </p>
+    </div>
+    
+    <iframe src="https://www.lipsum.com/feed/html" height="400px" width="400px">
+    </iframe>
+    <!-- <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/LJSNhG7xoyk?start=30"
+     frameborder="0" allow="accelerometer; autoplay; encrypted-media; 
+     gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
+     <video width="320" height="320"  controls>
+         <source src="C:\Users\Revature\Downloads\SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+     </video>
   </body>
 </html>

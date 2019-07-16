@@ -1,0 +1,55 @@
+/* this is a comment in css, notice the difference between it and html
+
+we have a:
+    multi line comment /*  */
+    /*
+    
+
+    What does css stand for?
+        Cascading style sheet
+    What does it mean by cascading?
+        you style something and the style cascades down
+        Will go from least to most specific when determining style for
+            each particular element
+        
+    CSS  Syntax:
+        [selector][curly brace][key-value pairs][semicolon][end curly brace]
+
+        when we want to grab an element by its tag name ex:
+            p{}, h1{}, h2{}, li{},...etc.
+        We can group elements together to be styled by class name
+        We can get even more specific by specifying the element to have an
+            id and can then specify what styles that element should have
+        
+*/
+
+body{
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    color:red;
+}
+
+p{
+    color:yellow;
+}
+
+.myClass{
+    font-family: cursive;
+    color:green;
+}
+
+#h1{
+    color:blue;
+}
+
+table{
+    border-color: red;
+    border-style: dotted;
+    padding:50px;
+    margin: 50px;
+    border-width: 10px
+}
+
+li:nth-child(odd){
+    background-color: red;
+}
