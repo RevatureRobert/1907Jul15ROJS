@@ -28,16 +28,16 @@ body{
     font-family: 'Times New Roman', Times, serif;
     color:red;
 }
-
+/* no prefix grabs something by tag name */
 p{
     color:yellow;
 }
-
+/* '.' lets you grab something by class name */
 .myClass{
     font-family: cursive;
     color:green;
 }
-
+/* # lets you grab something by id */
 #h1{
     color:blue;
 }
@@ -57,3 +57,14 @@ tr:nth-child(odd){
 tr{
     background-color: blueviolet
 }
+/* this is a child selector, it will grab the direct 
+    descendent of that element */
+ul>li{
+    background-color: white;
+}
+/* nested tags allow you to select elements that are nested 
+    deeper inside the element than one layer  */
+body p{
+    background-color: white;
+}
+
