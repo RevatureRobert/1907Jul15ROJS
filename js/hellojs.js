@@ -321,3 +321,18 @@ let ufo4=(function (){
         return ++mia;
     }
 })()
+
+let driveCar=(function (){
+    console.log("purchased car");
+    let miles=0;
+    return function(driven){
+        console.log("the car has been driven "+driven+" miles");
+        return miles+=driven;
+    }
+})()
+
+let arr=[1,2,3,4,5]
+let tdArr=[ [1,2,3,4], [5,6,7,8], [9,0,2,3] ];
+
+arr[0]
+tdArr[0][1]
