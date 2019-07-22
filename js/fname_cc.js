@@ -53,8 +53,8 @@ let toystore={
         this.invCount=this.inventory.length
     },
     removeItem: function (toy){
-        for(let x=0;x<this.inventory.length;x++){
-            if(this.inventory[x]==toy){
+        // for(let x=0;x<this.inventory.length;x++){
+        //     if(this.inventory[x]==toy){
                 // this.inventory[x]=this.inventory[this.inventory.length-1];
                 // this.inventory.length=this.inventory.length-1;
                 this.inventory.splice(1,x);
