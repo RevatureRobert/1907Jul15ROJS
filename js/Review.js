@@ -8,6 +8,8 @@ let arr2=[1,2,3,4,...arr]
 //-> arr2=[1,2,3,4,[5,6,7,8]]
 
 // //another way to do it:
+// let arr=[5,6,7,8];
+// let arr2=[1,2,3,4]
 // for(let x=0;x<arr.length;x++){
 //     arr2[arr2.length]=arr[x];
 // }
