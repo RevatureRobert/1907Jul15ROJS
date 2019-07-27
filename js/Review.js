@@ -22,7 +22,7 @@ let arr=[5,2,6,3,7,12,13,11,8,98,65,45,87,33,55,23,32,19]
 
 function bubbleSort(arr){
     for(let i=0; i<arr.length;i++){
-        for(let j=0; j<arr.length;j++){
+        for(let j=0; j<i;j++){
             if(arr[j]>arr[j+1]){
                 let temp=arr[j];
                 arr[j]=arr[j+1];
@@ -33,6 +33,27 @@ function bubbleSort(arr){
     return arr;
 }
 
+function bubble_Sort(a)
+{
+   var swapp;
+   var n = a.length-1;
+   var x=a;
+   do {
+       swapp = false;
+       for (var i=0; i < n; i++)
+       {
+           if (x[i] < x[i+1])
+           {
+              var temp = x[i];
+              x[i] = x[i+1];
+              x[i+1] = temp;
+              swapp = true;
+           }
+       }
+       n--;
+   } while (swapp);
+return x;
+}
 
 /**
 Selection Sort	Ω(n^2)	     θ(n^2)	        O(n^2)
@@ -107,6 +128,8 @@ getArgs3(1);
 getArgs3(1,3);
 //-->1 3
 
+//short circuiting is where, if it finds something to make
+//it stop, it does not continue
 //default values
 0||"groundhog"
 //-->groundhog
@@ -115,4 +138,41 @@ getArgs3(1,3);
 0&&"groundhog"
 //--> 0
 
+
+let numMedBox=[0,1,2,3,4,5,6]; 
+numMedBox[3]
+//-->3
+let upsPackage=[[1,2,3,4,5],[6,7,8,9],[10,11,12,13]]; 
+upsPackage[1][1]
+//-->7
+upsPackage[1]
+//-->[6,7,8,9]
+upsPackage[2][3]
+//-->13
+[1]  [2]  [3]  [4]  [5]
+[6]  [7]  [8]  [9]
+[10] [11] [12] [13]
+
+for(let x=0; x<upsPackage.length;x++){
+    for(let y=0;y<upsPackage[x].length;y++){
+        console.log(upsPackage[x][y]+"\t")
+    }
+    console.log("\n")
+}
+
+let grpString='';
+for(let x=0;x<upsPackage.length;x++){
+    for(let y=0;y<upsPackage[x].length;y++){
+        grpString+=""+upsPackage[x][y]+"\t"
+    }
+    grpString+="\n"
+}console.log(grpString)
+
+
+let bob={
+    name:"bob",
+    age:21,
+    statement:`My name is ${name}
+     and my age is ${this.age}`
+}
 
