@@ -167,12 +167,3 @@ for(let x=0;x<upsPackage.length;x++){
     }
     grpString+="\n"
 }console.log(grpString)
-
-
-let bob={
-    name:"bob",
-    age:21,
-    statement:`My name is ${name}
-     and my age is ${this.age}`
-}
-
